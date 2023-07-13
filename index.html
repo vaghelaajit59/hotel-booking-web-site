@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Booking.com</title>
+  <link rel="shortcut icon" href="booking logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="bootstrep.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <!-- Navbar content -->
+
+    <div class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="data:image/png;base64,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" height="50px" width="50px"  alt="">
+          <br><a class="navbar-brand" href="#">Booking.com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Stays</a>
+              <a class="nav-link" href="#">Flights</a>
+              <a class="nav-link" href="#">Flights+Hotels</a>
+              <a class="nav-link" href="#">Car Rentals </a>
+              <a class="nav-link" href="#">Attractions</a>
+              <a class="nav-link" href="#">Airport Taxis</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="mail" placeholder="Search your places" aria-label="G-mail">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+ <hr>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="padding: 2%; ">
+      <div class="carousel-item active">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/103705059.jpg?k=9e078265b31ad1815a573da8ed2a665f863e3925e1efd730df703421868a2ada&o=&hp=1" class="d-block w-100 " height="550" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Mumbai</h2>
+          <p>Mumbai is the capital city of the Indian state of Maharashtra. Mumbai is the de facto financial centre and the most populous city of India</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1565967511849-76a60a516170?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2luZ2Fwb3JlfGVufDB8fDB8fHww&w=1000&q=80" class="d-block w-100" height="550" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Singapore</h2>
+          <p>Singapore officially the Republic of Singapore, is an island country and city</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2017/05/09/03/47/buildings-2297210_1280.jpg" class="d-block w-100" height="550" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>canada</h2>
+          <p>Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic Ocean</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="https://www.travelandleisure.com/thmb/iAIrOVW7yWrDG8pZBpKMOvEGuNQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/new-delhi-india-NEWDELHITG0721-60d592e1603349298a0206d67d08582b.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">New Delhi</h5>
+            <p class="card-text">New Delhi was laid by George V during the Delhi Durbar of 1911. It was designed by British architects Edwin Lutyens and Herbert Baker.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="b2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bangalore</h5>
+            <p class="card-text">Bangalore was part of several successive South Indian kingdoms,the region was ruled by the Western Ganga dynasty of Karnataka.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br></br>
+
+    <div class="cart">
+      <div class="container">
+        <div class="card-group">
+          <div class="card" style="padding: 8px;">
+            <img src="https://tourscanner.com/blog/wp-content/uploads/2022/07/fun-and-unusual-things-to-do-in-Mumbai.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mumbai</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+
+          <div class="card" style="padding: 8px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Chennai_Central.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Channai</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+
+          <div class="card" style="padding: 8px;">
+            <img src="BANGALORE.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hyderabad</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <br>
+
+      <p class="h4">Quick and easy trip planner</p>
+      <p class="h6">Pick a vibe and explore the top destinations in India</p>
+      <ul class="nav nav-tabs">
+
+       
+      </ul>
+      <br>
+      <div class="d-flex flex-row bd-highlight mb-12">
+        <div class="col-md-2" style="padding: auto;">
+          <img
+            src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018162.jpg?k=b56277100459626c66be8e27db905d17ef2afed42ac97bcf6aa9070a59206016&o="
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Surat</h5>
+
+          </div>
+        </div>
+        <div class="col-md-2" style="padding: 5px; height: auto;">
+          <img
+            src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018336.jpg?k=e4e639d716b005b9cb3fb148c5a7cf08ad70a2f432097129e285657819b8ae6b&o="
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bhuj</h5>
+
+          </div>
+
+        </div>
+        <div class="col-md-2" style="padding: 5px;">
+          <img
+            src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018272.jpg?k=9b7403ce2878cfd1566c05f45cadbe3e5d6adc862c30f21a311465eccfa2e9a0&o="
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jodhpur</h5>
+
+          </div>
+
+        </div>
+        <div class="col-md-2" style="padding: 5px;">
+          <img
+            src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018295.jpg?k=19d9daa9f85af645d2bfe993e8baf7311063a21ec02346195d7025b45a84c472&o="
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dwarka</h5>
+
+          </div>
+
+        </div>
+        <div class="col-md-2" style="padding: 5px;">
+          <img
+            src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018330.jpg?k=752e8ab831d20973da60558fef0ad119de7d55aff2a183931a064b6c2d94ea3d&o="
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bundi</h5>
+
+          </div>
+
+        </div>
+        <div class="col-md-2" style="padding: 5px;">
+          <img
+            src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018359.jpg?k=6e1048805b135670f801579a832fd7391abc1c1cf1e46d4823bc4bd38ceb9c5f&o="
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ajmer</h5>
+
+          </div>
+
+        </div>
+      </div>
+
+      <br>
+
+     
+
+      
+      <div class="row" style="background-color: blanchedalmond; ">
+        <div class="col-md-5">
+          <p class="h2">Besnik</p>
+          <p class="h6">Neque porro quisquam est,qui dolorem ipsum </p>
+          <p class="h6"> quia dolor sit amet, consectetur.</p> <br>
+         <div class="logo" >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgP_T6wwvbYI2t4aFBazR97p5_PeCEBjpIEK6NzzA8t_ATt3PIXDccSizkc9OaBm_a-Z8&usqp=CAU"
+            height="25px" width="25px" alt="">
+          <img
+            src="data:image/png;base64,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"
+            height="25px" width="25px" alt=""> 
+          <img
+            src="data:image/png;base64,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"
+            height="25px" width="25px" alt=""> 
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAADz8/N4eHhLS0vIyMj39/f8/Pzu7u74+Pjq6urg4ODk5OReXl7w8PB1dXVmZmZra2s3NzesrKyDg4NRUVGQkJCioqLb29sPDw+Hh4ccHBxERESvr689PT2lpaXKysodHR0yMjIoKChYWFiamprJyckTExO7u7vcshGSAAADbUlEQVR4nO2c2XbaMBBAowCFmIAhIWwhgWwt//+F5dDTJCyasWsJLb33WTqai7EtjUa+ugIAAAAAAAAAAAAAAAAAAAAAAACA6Ok/TcvRaDyZbbqhQ/HBvGW+0X4KHY9r+m1zzH3omJyyPPHbcXcdOix3rM4J7uiHDswVdxZBY25Dh+aGgVXQmCweqltB0IxDR+cCSdCYeejwmjOTDQeh42vOL9nQDEMH2JS+Ipj+i/9eM0z+WdPSDF9CR9iUd83QhI6wKacz7mNuQofYEN3wR+gQGyJN2fL4l040wUXoCJvypBmOQkfYlEIzTP6Nf/WqGCY/a9P+phnMvJXVUw6JjI4kOAkdnROEqelb6Ngc8WA1TH0+84llYvOSUcL0bCqjDB2VU4qTy7jKIAd1SDF9/NJbTLLz2zPsrKfL5XTd6YWOBAAAACBKute93jD17LmFYrt8/5rxrsrMCq42ZxPOzx+XrfGwLvD3HC+ClR3Vg7azhbXd6yWryuoZKhnk735yS/MRqWGvouHGfv0+2UZpOKxmqG747GlfJhFUz/C6imH3uZLgjp/xGf6oYKhc5wNmKRoqt+oRF8iq1zO8UQ2V3yCAomvDt5qG/l8b9Qy7muGorqAxnaQM1RqrKoPEbFj3JvzDKiZDufmbfRtLxG+xgEtDrZTTitcVlUvDf8brKyMKQ68PmzgMl9kb+iyfi8TQ46I/EsPn7A1NkaDhy6DVKgePesM969QMR52/CeCbrV6mu+MhLcPysKSxqDKbS8rwtJJjrXfapGN4d26WKR6R2+NtJezc0PLcV6+it3pr14YL2zpBuxe91cy7NrTW3Ko5OF9LKMeGU/tI2hkrX/XIjg2FkW6Vrr4yUm4NxXyE/dC43jcaQ3GoD7mvr9eFU8OWONRc7uwrleHUUNkSlDv7Oq7q1FB5HMo3oq/TK04NlYKSUuzsa3Xh1FAZayp2bmdgKO9q5GAoLzByMBTPWGGIIYYYYoghhtEYqvU0GGKIIYaNDfXaRAxjN8z/X5q/YZVKdgwxxBBDDP93w0onuzDEEEOvhhXPkGKIYUDDqme5McQQQwwxtBtW//IHhhhiiCGGNkOl3h5DDDHE0IFhnS/S1TX09YmTcUtgfPxl/UJsrn3GfS71LoVDYQAAAAAAAAAAAAAAAAAAAAAAAAAQkt8Uhjn7mAsanQAAAABJRU5ErkJggg=="
+            height="25px" width="25px" alt="">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <p class="h4">About Us</p>
+          <ul><a href="#">Home</a> </ul>
+          <ul> <a href="#">About</a></ul>
+          <ul> <a href="#">Coures</a> </ul>
+          <ul><a href="#">Services</a> </ul>
+
+        </div>
+        <div class="col-md-2">
+
+          <p class="h4">Resources</p>
+
+          <ul><a href="#">Our Work</a> </ul>
+          <ul> <a href="#">Services</a></ul>
+          <ul> <a href="#">FAQ</a> </ul>
+        </div>
+        
+        <div class="col-md-2">
+
+          <p class="h4">Contact US</p>
+
+          <ul><a href="#">About Us</a> </ul>
+          <ul> <a href="#">Menu</a></ul>
+          <ul> <a href="#">Contact</a> </ul>
+        </div>
+ 
+        <br>
+        <br>
+        <br>
+        <div class="line">
+
+        </div> 
+        <br>
+        
+        <div class="d-flex flex-row bd-highlight mb-12">
+          <div class="col-md-9">
+<a href="#">CopyRight@Besnik. All Right Reserved</a>
+          </div>
+          <div class="col-md-1">
+            <a href="#">Privacy</a>
+          </div>
+          <div class="col-md-2">
+            <a href="#">Terms Of Services</a>
+          </div>
+      </div>
+      </div>
+    
+</body>
+
+</html>
